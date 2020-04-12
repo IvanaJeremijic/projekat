@@ -4,7 +4,7 @@
 class Obrok
 {
 private:
-    enum
+
 };
 
 #endif // OBROK_HPP_INCLUDED
