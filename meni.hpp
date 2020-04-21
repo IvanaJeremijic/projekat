@@ -1,12 +1,18 @@
 #ifndef MENI_HPP_INCLUDED
 #define MENI_HPP_INCLUDED
+#include "obrok.hpp"
+#include "jelo.hpp"
+#include "pice.hpp"
 
-enum Obroci {dorucak, rucak, vecera, uzina, dezert};
+enum VrstaObroka {dorucak, rucak, vecera, uzina, dezert, brunch};
 
 class Meni
 {
 private:
-    Obroci obrok;
+    VrstaObroka vrsta;
+    Obrok o;
+    Jelo j;
+    Pice p;
 };
 
 #endif // MENI_HPP_INCLUDED
