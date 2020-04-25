@@ -4,7 +4,7 @@
 class Pice
 {
 private:
-    char imePica[10];
+    string imePica;
     int cenaPica;
 };
 
