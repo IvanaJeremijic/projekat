@@ -5,8 +5,8 @@
 class Korisnik
 {
 private:
-    char ime[10];
-    char prezime[20];
+    string ime;
+    string prezime;
     int brojTelefona;
     Adresa a;
 };
