@@ -2,13 +2,12 @@
 #define KORISNIK_HPP_INCLUDED
 #include "adresa.hpp"
 
-class Korisnik
+class Korisnik: public Adresa
 {
 private:
     string ime;
     string prezime;
     int brojTelefona;
-    Adresa a;
 };
 
 #endif // KORISNIK_HPP_INCLUDED

@@ -1,17 +1,13 @@
 #ifndef PORUDZBINA_HPP_INCLUDED
 #define PORUDZBINA_HPP_INCLUDED
-#include "restoran.hpp"
-#include "meni.hpp"
+#include "artikal.hpp"
 
-enum BrzinaDostave {pice, jelo, obrok};
 
 class Porudzbina
 {
 private:
     int cena;
-    BrzinaDostave brzina;
-    Restoran r;
-    Meni m;
+    Artikal artikal[50];
 };
 
 #endif // PORUDZBINA_HPP_INCLUDED

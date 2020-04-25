@@ -3,11 +3,10 @@
 #include "jelo.hpp"
 #include "pice.hpp"
 
-class Obrok
+class Artikal
 {
 private:
-    Jelo j;
-    Pice p;
+    int id;
 };
 
 #endif // OBROK_HPP_INCLUDED

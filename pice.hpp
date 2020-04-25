@@ -1,7 +1,8 @@
 #ifndef PICE_HPP_INCLUDED
 #define PICE_HPP_INCLUDED
+#include "artikal.hpp"
 
-class Pice
+class Pice: public Artikal
 {
 private:
     string imePica;
