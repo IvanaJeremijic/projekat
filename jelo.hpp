@@ -5,7 +5,7 @@ class Jelo
 {
 private:
     bool vegeterijanska;
-    char imeJela[10];
+    string imeJela;
     int cenaJela;
 };
 
