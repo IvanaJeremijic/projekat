@@ -4,9 +4,9 @@
 class Adresa
 {
 private:
-    char imeUlice[20];
+    string imeUlice;
     int broj;
-    char imeGrada[15];
+    string imeGrada;
 };
 
 #endif // ADRESA_HPP_INCLUDED
