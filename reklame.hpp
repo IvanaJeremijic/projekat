@@ -4,7 +4,7 @@
 class Reklame{
 private:
     int cena;
-    char nazivProizvoda[15];
+    string nazivProizvoda;
 };
 
 #endif // REKLAME_HPP_INCLUDED
