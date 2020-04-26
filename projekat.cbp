@@ -33,16 +33,16 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="adresa.hpp" />
+		<Unit filename="artikal.hpp" />
 		<Unit filename="jelo.hpp" />
 		<Unit filename="korisnik.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="meni.hpp" />
-		<Unit filename="obrok.hpp" />
 		<Unit filename="pice.hpp" />
 		<Unit filename="porudzbina.hpp" />
 		<Unit filename="reklame.hpp" />
 		<Unit filename="restoran.hpp" />
-		<Unit filename="vrsta kuhinje.hpp" />
+		<Unit filename="vrsta_kuhinje.hpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
