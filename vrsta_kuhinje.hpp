@@ -1,7 +1,7 @@
 #ifndef VRSTA_KUHINJE_HPP_INCLUDED
 #define VRSTA_KUHINJE_HPP_INCLUDED
 
-enum Kuhinje{italijanska, kineska, srpska, francuska, meksicka, tajlandska, mediteranska, rostilj};
+enum Kuhinje{italijanska, kineska, domaca, brzaHrana};
 
 class Vrsta_kuhinje
 {
@@ -16,6 +16,13 @@ public:
     Vrsta_kuhinje(){
         kuhinja=italijanska;
         opis="ljuto";
+    }
+
+    Kuhinje getK()const{
+        return kuhinja;
+    }
+    string getO()const{
+        return opis;
     }
 };
 #endif // VRSTA_KUHINJE_HPP_INCLUDED

@@ -12,19 +12,10 @@ using namespace std;
 #include "porudzbina.hpp"
 #include "reklame.hpp"
 
+//porucivanje hrane: unos podataka korisnika, odabir vrste kuhinje, zatim jela i pica i na kraju sumiranje cele porudzbine
+
 int main()
 {
-    //Korisnik k1("ulica1", 2, "grad1", "Anja", "Gagic", 5);
-    //Adresa a1("ulica2", 3, "grad2");
-    //Vrsta_kuhinje v1(italijanska, "neljuto");
-    //Restoran r1(1, false, "jelo1", 2, 3, "pice1", 4, dorucak, 5);
-    //Meni m1(1, false, "", 3, 4, "", 2, rucak);
-    //Meni m2();
-    //Jelo j1(1, false, "", 2);
-    //Pice p1(2, "", 3);
-    //Artikal a1(1);
-    //Artikal();
-    //Porudzbina p1(2);
-    //Reklame r1(1, "");
+
     return 0;
 }
