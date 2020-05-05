@@ -2,14 +2,16 @@
 #define KORISNIK_HPP_INCLUDED
 #include "adresa.hpp"
 
-class Korisnik: public Adresa
+class Korisnik
 {
 private:
     string ime;
     string prezime;
     int brojTelefona;
+    int id;
+    Adresa a;
 public:
-    Korisnik(string ulica, int br, string grad, string i, string p, int brt): Adresa(ulica, br, grad), ime(i), prezime(p), brojTelefona(brt){}
+    Korisnik(string ulica, int br, string grad, string i, string p, int brt): a(ulica, br, grad), ime(i), prezime(p), brojTelefona(brt){}
 
     void unos(){
         cout<<"Unesite svoje podatke:"<<endl;
@@ -20,11 +22,11 @@ public:
         cout<<"broj telefona:"<<endl;
         cin>>brojTelefona;
         cout<<"ime ulice:"<<endl;
-        cin>>imeUlice;
+        a.setUlica();
         cout<<"broj kuce:"<<endl;
-        cin>>broj;
+        a.setBroj();
         cout<<"ime grada:"<<endl;
-        cin>>imeGrada;
+        a.setGrad();
     }
 };
 

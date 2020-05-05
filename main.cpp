@@ -16,6 +16,10 @@ using namespace std;
 
 int main()
 {
-
+    Korisnik k("ulica",1,"grad","ime","prezime",444);
+    k.unos();
+    cout<<endl<<endl;
+    Meni m;
+    m.citajFajl("MENI.txt");
     return 0;
 }

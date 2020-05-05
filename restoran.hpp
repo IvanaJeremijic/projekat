@@ -7,7 +7,23 @@ ostream& operator<<(ostream& out, const Vrsta_kuhinje& v){
         out<<v.getK()<<endl;
         out<<v.getO()<<endl;
         return out;
-    }
+}
+ostream& operator<<(ostream& out, const Jelo& j){
+        out<<j.getI()<<endl;
+        out<<j.getC()<<endl;
+        out<<j.getVeg()<<endl;
+        return out;
+}
+ostream& operator<<(ostream& out, const Pice& p){
+        out<<p.getIme()<<endl;
+        out<<p.getCena()<<endl;
+        return out;
+}
+ostream& operator<<(ostream& out, const Meni& m){
+    out<<m.getJ()<<endl;
+    out<<m.getP()<<endl;
+    return out;
+}
 
 class Restoran
 {
@@ -28,6 +44,9 @@ public:
     }
 
     friend ostream& operator<<(ostream& out, const Vrsta_kuhinje& v);
+    friend ostream& operator<<(ostream& out, const Jelo& j);
+    friend ostream& operator<<(ostream& out, const Pice& p);
+    friend ostream& operator<<(ostream& out, const Meni& m);
 
     void porucivanje(){
         cout<<"Izaberite vrstu kuhinje:"<<endl;

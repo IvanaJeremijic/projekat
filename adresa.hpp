@@ -3,7 +3,7 @@
 
 class Adresa
 {
-protected:
+private:
     string imeUlice;
     int broj;
     string imeGrada;
@@ -13,6 +13,9 @@ public:
         broj=br;
         imeGrada=grad;
     }
+    void setUlica(){cin>>imeUlice;}
+    void setBroj(){cin>>broj;}
+    void setGrad(){cin>>imeGrada;}
 };
 
 #endif // ADRESA_HPP_INCLUDED

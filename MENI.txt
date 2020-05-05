@@ -1,0 +1,3 @@
+Pasta, 300, Coca-Cola, 90
+Burger, 150, Voda, 50
+Giros, 320, Fanta, 90
