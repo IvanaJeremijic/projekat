@@ -9,7 +9,8 @@ private:
     int cena;
     Artikal artikal[50];
 public:
-    Porudzbina(int c){
+    Porudzbina(int c)
+    {
         cena=c;
     }
 };

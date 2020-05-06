@@ -2,7 +2,7 @@
 1586272558 source:c:\programiranje\projekat\main.cpp
 	<iostream>
 
-1588705912 source:c:\skola\programiranje\projekat\main.cpp
+1588706186 source:c:\skola\programiranje\projekat\main.cpp
 	<iostream>
 	"korisnik.hpp"
 	"adresa.hpp"
@@ -15,32 +15,32 @@
 	"porudzbina.hpp"
 	"reklame.hpp"
 
-1588705796 c:\skola\programiranje\projekat\korisnik.hpp
+1588760268 c:\skola\programiranje\projekat\korisnik.hpp
 	"adresa.hpp"
 
-1588705796 c:\skola\programiranje\projekat\adresa.hpp
+1588760268 c:\skola\programiranje\projekat\adresa.hpp
 
-1588449611 c:\skola\programiranje\projekat\vrsta_kuhinje.hpp
+1588760268 c:\skola\programiranje\projekat\vrsta_kuhinje.hpp
 
-1588703677 c:\skola\programiranje\projekat\restoran.hpp
+1588760268 c:\skola\programiranje\projekat\restoran.hpp
 	"meni.hpp"
 	"vrsta_kuhinje.hpp"
 
-1588705409 c:\skola\programiranje\projekat\meni.hpp
+1588760268 c:\skola\programiranje\projekat\meni.hpp
 	<fstream>
 	"jelo.hpp"
 	"pice.hpp"
 
-1588623031 c:\skola\programiranje\projekat\jelo.hpp
+1588760268 c:\skola\programiranje\projekat\jelo.hpp
 	"artikal.hpp"
 
-1587901634 c:\skola\programiranje\projekat\artikal.hpp
+1588760268 c:\skola\programiranje\projekat\artikal.hpp
 
-1588622711 c:\skola\programiranje\projekat\pice.hpp
+1588760267 c:\skola\programiranje\projekat\pice.hpp
 	"artikal.hpp"
 
-1587901153 c:\skola\programiranje\projekat\porudzbina.hpp
+1588760267 c:\skola\programiranje\projekat\porudzbina.hpp
 	"artikal.hpp"
 
-1587901573 c:\skola\programiranje\projekat\reklame.hpp
+1588760268 c:\skola\programiranje\projekat\reklame.hpp
 

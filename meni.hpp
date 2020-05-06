@@ -32,10 +32,17 @@ private:
     Jelo jela[7];
     Pice pica[7];
 public:
-    Meni(){}
-    Jelo getJ() const {return jela[7];}
-    Pice getP() const {return pica[7];}
-    void unosJela(){
+    Meni() {}
+    Jelo getJ() const
+    {
+        return jela[7];
+    }
+    Pice getP() const
+    {
+        return pica[7];
+    }
+    void unosJela()
+    {
         Jelo j1(1, true, "jelo1", 250);
         jela[0]=j1;
         Jelo j2(2, true, "jelo2", 200);
@@ -52,7 +59,8 @@ public:
         jela[6]=j7;
     }
 
-    void unosPica(){
+    void unosPica()
+    {
         Pice p1(1, "pice1", 250);
         pica[0]=p1;
         Pice p2(2, "pice2", 200);
@@ -68,10 +76,11 @@ public:
         Pice p7(7, "pice7", 250);
         pica[6]=p7;
     }
-    void citajFajl(string nazivFajla){
-    cout<<"Meni: "<<endl;
-    citajTxt(nazivFajla);
-    cout<<endl<<endl;
+    void citajFajl(string nazivFajla)
+    {
+        cout<<"Meni: "<<endl;
+        citajTxt(nazivFajla);
+        cout<<endl<<endl;
     }
 };
 

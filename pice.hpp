@@ -8,10 +8,16 @@ private:
     string imePica;
     int cenaPica;
 public:
-    string getIme() const{return imePica;}
-    int getCena() const{return cenaPica;}
-    Pice(int id, string ime, int cena): Artikal(id), imePica(ime), cenaPica(cena){}
-    Pice(): Artikal(0), imePica("ime"), cenaPica(1){}
+    string getIme() const
+    {
+        return imePica;
+    }
+    int getCena() const
+    {
+        return cenaPica;
+    }
+    Pice(int id, string ime, int cena): Artikal(id), imePica(ime), cenaPica(cena) {}
+    Pice(): Artikal(0), imePica("ime"), cenaPica(1) {}
 };
 
 #endif // PICE_HPP_INCLUDED

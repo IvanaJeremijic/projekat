@@ -3,25 +3,10 @@
 #include "meni.hpp"
 #include "vrsta_kuhinje.hpp"
 
-ostream& operator<<(ostream& out, const Vrsta_kuhinje& v){
-        out<<v.getK()<<endl;
-        out<<v.getO()<<endl;
-        return out;
-}
-ostream& operator<<(ostream& out, const Jelo& j){
-        out<<j.getI()<<endl;
-        out<<j.getC()<<endl;
-        out<<j.getVeg()<<endl;
-        return out;
-}
-ostream& operator<<(ostream& out, const Pice& p){
-        out<<p.getIme()<<endl;
-        out<<p.getCena()<<endl;
-        return out;
-}
-ostream& operator<<(ostream& out, const Meni& m){
-    out<<m.getJ()<<endl;
-    out<<m.getP()<<endl;
+ostream& operator<<(ostream& out, const Vrsta_kuhinje& v)
+{
+    out<<v.getK()<<endl;
+    out<<v.getO()<<endl;
     return out;
 }
 
@@ -32,7 +17,8 @@ private:
     Vrsta_kuhinje vrsta[8];
 public:
 
-    void vrsteKuhinje(){
+    void vrsteKuhinje()
+    {
         Vrsta_kuhinje v1(italijanska, "italijanska");
         vrsta[0]=v1;
         Vrsta_kuhinje v2(kineska, "kineska");
@@ -44,18 +30,18 @@ public:
     }
 
     friend ostream& operator<<(ostream& out, const Vrsta_kuhinje& v);
-    friend ostream& operator<<(ostream& out, const Jelo& j);
-    friend ostream& operator<<(ostream& out, const Pice& p);
-    friend ostream& operator<<(ostream& out, const Meni& m);
 
-    void porucivanje(){
+    void porucivanje()
+    {
         cout<<"Izaberite vrstu kuhinje:"<<endl;
-        for(int i; i<4; i++){
+        for(int i; i<4; i++)
+        {
             cout<<i+1<<"."<<vrsta[i]<<endl;
         }
         int broj;
         cin>>broj;
-        if(broj==1){
+        if(broj==1)
+        {
 
         }
     }

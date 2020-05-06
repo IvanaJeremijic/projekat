@@ -6,10 +6,12 @@ class Artikal
 protected:
     int id;
 public:
-    Artikal(int idd){
+    Artikal(int idd)
+    {
         id=idd;
     }
-    Artikal(){
+    Artikal()
+    {
         id=0;
     }
 };

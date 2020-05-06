@@ -11,9 +11,10 @@ private:
     int id;
     Adresa a;
 public:
-    Korisnik(string ulica, int br, string grad, string i, string p, int brt): a(ulica, br, grad), ime(i), prezime(p), brojTelefona(brt){}
+    Korisnik(string ulica, int br, string grad, string i, string p, int brt): a(ulica, br, grad), ime(i), prezime(p), brojTelefona(brt) {}
 
-    void unos(){
+    void unos()
+    {
         cout<<"Unesite svoje podatke:"<<endl;
         cout<<"ime:"<<endl;
         cin>>ime;
