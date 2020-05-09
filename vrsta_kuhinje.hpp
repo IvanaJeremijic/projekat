@@ -28,5 +28,7 @@ public:
     {
         return opis;
     }
+
+    friend ostream& operator<<(ostream& out, const Vrsta_kuhinje& v);
 };
 #endif // VRSTA_KUHINJE_HPP_INCLUDED

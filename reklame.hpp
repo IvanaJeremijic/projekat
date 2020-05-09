@@ -12,6 +12,20 @@ public:
         cena=c;
         nazivProizvoda=naziv;
     }
+    Reklame()
+    {
+        cena=5;
+        nazivProizvoda="proizvod";
+    }
+    int getCena()const
+    {
+        return cena;
+    }
+    string getNaziv()const
+    {
+        return nazivProizvoda;
+    }
+    friend ostream& operator<<(ostream& out, const Korisnik& k);
 };
 
 #endif // REKLAME_HPP_INCLUDED

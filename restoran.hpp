@@ -3,13 +3,6 @@
 #include "meni.hpp"
 #include "vrsta_kuhinje.hpp"
 
-ostream& operator<<(ostream& out, const Vrsta_kuhinje& v)
-{
-    out<<v.getK()<<endl;
-    out<<v.getO()<<endl;
-    return out;
-}
-
 class Restoran
 {
 private:
@@ -29,9 +22,7 @@ public:
         vrsta[3]=v4;
     }
 
-    friend ostream& operator<<(ostream& out, const Vrsta_kuhinje& v);
-
-    void porucivanje()
+    /*void porucivanje()
     {
         cout<<"Izaberite vrstu kuhinje:"<<endl;
         for(int i; i<4; i++)
@@ -44,7 +35,7 @@ public:
         {
 
         }
-    }
+    }*/
 
 };
 #endif // RESTORAN_HPP_INCLUDED

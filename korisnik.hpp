@@ -10,8 +10,10 @@ private:
     int brojTelefona;
     int id;
     Adresa a;
+    static int broj;
 public:
-    Korisnik(string ulica, int br, string grad, string i, string p, int brt): a(ulica, br, grad), ime(i), prezime(p), brojTelefona(brt) {}
+    Korisnik(string ulica, int br, string grad, string i, string p, int brt): a(ulica, br, grad), ime(i), prezime(p), brojTelefona(brt) {broj++;}
+    Korisnik(): a("ime ulice", 8, "ime grada"), ime("ime"), prezime("prezime"), brojTelefona(6) {broj++;}
 
     void unos()
     {
@@ -28,6 +30,35 @@ public:
         a.setBroj();
         cout<<"ime grada:"<<endl;
         a.setGrad();
+    }
+    string getIme()const
+    {
+        return ime;
+    }
+    string getPrezime()const
+    {
+        return prezime;
+    }
+    int getBrTel()const
+    {
+        return brojTelefona;
+    }
+    int getId()const
+    {
+        return id;
+    }
+    Adresa getAdresa()const
+    {
+        return a;
+    }
+
+    friend ostream& operator<<(ostream& out, const Korisnik& k);
+
+    int getBroj(){
+        return broj;
+    }
+    static int getStatickiBroj(){
+        return broj;
     }
 };
 

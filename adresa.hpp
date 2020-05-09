@@ -26,6 +26,19 @@ public:
     {
         cin>>imeGrada;
     }
+    string getUlica()const
+    {
+        return imeUlice;
+    }
+    int getBroj()const
+    {
+        return broj;
+    }
+    string getGrad()const
+    {
+        return imeGrada;
+    }
+    friend ostream& operator<<(ostream& out, const Adresa& a);
 };
 
 #endif // ADRESA_HPP_INCLUDED
