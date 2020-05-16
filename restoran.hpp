@@ -13,21 +13,23 @@ public:
     Restoran(){}
     void vrsteKuhinje()
     {
-        Vrsta_kuhinje v1(italijanska, "italijanska");
+        Vrsta_kuhinje v1(italijanska, "opis");
         v.push_back(v1);
-        Vrsta_kuhinje v2(kineska, "kineska");
+        Vrsta_kuhinje v2(kineska, "opis");
         v.push_back(v2);
-        Vrsta_kuhinje v3(domaca, "domaca");
+        Vrsta_kuhinje v3(domaca, "opis");
         v.push_back(v3);
-        Vrsta_kuhinje v4(brzaHrana, "brza hrana");
+        Vrsta_kuhinje v4(brzaHrana, "opis");
         v.push_back(v4);
     }
 
     void porucivanje()
     {
         cout<<"Izaberite vrstu kuhinje:"<<endl;
+        int i=1;
         for(auto it=v.begin(); it<v.end(); it++){
-            cout<<*it<<endl<<endl;
+            cout<<"\t"<<i<<". "<<*it<<endl<<endl;
+            i++;
         }
     }
 

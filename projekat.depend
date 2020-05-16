@@ -2,7 +2,7 @@
 1586272558 source:c:\programiranje\projekat\main.cpp
 	<iostream>
 
-1589638119 source:c:\skola\programiranje\projekat\main.cpp
+1589649463 source:c:\skola\programiranje\projekat\main.cpp
 	<iostream>
 	"korisnik.hpp"
 	"adresa.hpp"
@@ -15,14 +15,14 @@
 	"porudzbina.hpp"
 	"reklame.hpp"
 
-1589538819 c:\skola\programiranje\projekat\korisnik.hpp
+1589644118 c:\skola\programiranje\projekat\korisnik.hpp
 	"adresa.hpp"
 
 1589056069 c:\skola\programiranje\projekat\adresa.hpp
 
 1589054610 c:\skola\programiranje\projekat\vrsta_kuhinje.hpp
 
-1589560494 c:\skola\programiranje\projekat\restoran.hpp
+1589645194 c:\skola\programiranje\projekat\restoran.hpp
 	"meni.hpp"
 	"vrsta_kuhinje.hpp"
 	<vector>

@@ -77,12 +77,15 @@ public:
         Pice p7(7, "pice7", 250);
         pica.push_back(p7);
     }
+
     void citajFajl(string nazivFajla)
     {
         cout<<"Meni: "<<endl;
         citajTxt(nazivFajla);
         cout<<endl<<endl;
     }
+
+
 };
 
 #endif // MENI_HPP_INCLUDED

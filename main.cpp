@@ -14,7 +14,6 @@ using namespace std;
 
 ostream& operator<<(ostream& out, const Vrsta_kuhinje& v)
 {
-    out<<"Vrsta kuhinje:";
     if(v.getK()==0){
         out<<"italijanska";
     }
@@ -28,7 +27,7 @@ ostream& operator<<(ostream& out, const Vrsta_kuhinje& v)
         out<<"brza hrana";
     }
     out<<endl;
-    out<<"opis:"<<v.getO();
+    out<<"\t\t"<<v.getO();
     return out;
 }
 
@@ -63,10 +62,15 @@ int Korisnik::broj=0;
 
 int main()
 {
+    cout<<"\t\t\t Dobrodosli!!!"<<endl;
+    cout<<"\t\t\t_______________";
+    cout<<endl<<endl;
     //cout<<"Ulogovalo se: "<<Korisnik::getStatickiBroj()<<" korisnika"<<endl;
-    //Korisnik k;
-    //k.unos();
-    //cout<<endl<<endl;
+    Korisnik k;
+    k.unos();
+    cout<<endl;
+    cout<<"_______________________________________";
+    cout<<endl<<endl;
     //Meni m;
     //m.citajFajl("MENI.txt");
     //Vrsta_kuhinje v;
@@ -74,13 +78,39 @@ int main()
     //cout<<endl<<endl;
     //cout<<k;
     //cout<<endl<<endl;
-    //Reklame r;
-    //cout<<r;
-    //cout<<endl<<endl;
+    Reklame reklama1;
+    cout<<reklama1<<endl;
+    cout<<"_______________________________________";
+    cout<<endl<<endl;
     //cout<<"Ulogovalo se: "<<k.getBroj()<<" korisnika"<<endl;
     Restoran r;
     r.vrsteKuhinje();
-    r.porucivanje();
+    int vrsta;
+    bool v;
+    do{
+        r.porucivanje();
+        cin>>vrsta;
+        if(vrsta==1){
+            cout<<"odabrali ste italijansku kuhinju."<<endl;
+        }
+        else if(vrsta==2){
+            cout<<"odabrali ste kinesku kuhinju."<<endl;
+        }
+        else if(vrsta==3){
+            cout<<"odabrali ste domacu kuhinju."<<endl;
+        }
+        else if(vrsta==4){
+            cout<<"odabrali ste brzu hranu."<<endl;
+        }
+        cout<<"Da li ste zadovoljni odabirom vrste kuhinje?"<<endl<<"da(1)"<<endl<<"ne(0)"<<endl;
+        cin>>v;
+        cout<<"_______________________________________";
+        cout<<endl<<endl;
+    }while(v==0);
+    Reklame reklama2;
+    cout<<reklama2<<endl;
+    cout<<"_______________________________________";
+    cout<<endl<<endl;
     //Jelo j;
     //j.ispis();
     //Pice p;

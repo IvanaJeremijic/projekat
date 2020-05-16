@@ -18,18 +18,24 @@ public:
     void unos()
     {
         cout<<"Unesite svoje podatke:"<<endl;
-        cout<<"ime:"<<endl;
+        cout<<"\time: ";
         cin>>ime;
-        cout<<"prezime:"<<endl;
+        cout<<endl;
+        cout<<"\tprezime: ";
         cin>>prezime;
-        cout<<"broj telefona:"<<endl;
+        cout<<endl;
+        cout<<"\tbroj telefona: ";
         cin>>brojTelefona;
-        cout<<"ime ulice:"<<endl;
+        cout<<endl;
+        cout<<"\time ulice: ";
         a.setUlica();
-        cout<<"broj kuce:"<<endl;
+        cout<<endl;
+        cout<<"\tbroj kuce: ";
         a.setBroj();
-        cout<<"ime grada:"<<endl;
+        cout<<endl;
+        cout<<"\time grada: ";
         a.setGrad();
+        cout<<endl;
     }
     string getIme()const
     {
