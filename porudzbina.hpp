@@ -7,7 +7,7 @@ class Porudzbina
 {
 private:
     int cena;
-    Artikal artikal[50];
+    vector <Artikal> a;
 public:
     Porudzbina(int c)
     {

@@ -63,20 +63,27 @@ int Korisnik::broj=0;
 
 int main()
 {
-    cout<<"Ulogovalo se: "<<Korisnik::getStatickiBroj()<<" korisnika"<<endl;
-    Korisnik k;
+    //cout<<"Ulogovalo se: "<<Korisnik::getStatickiBroj()<<" korisnika"<<endl;
+    //Korisnik k;
     //k.unos();
     //cout<<endl<<endl;
     //Meni m;
     //m.citajFajl("MENI.txt");
-    Vrsta_kuhinje v;
-    cout<<v;
-    cout<<endl<<endl;
-    cout<<k;
-    cout<<endl<<endl;
-    Reklame r;
-    cout<<r;
-    cout<<endl<<endl;
-    cout<<"Ulogovalo se: "<<k.getBroj()<<" korisnika"<<endl;
+    //Vrsta_kuhinje v;
+    //cout<<v;
+    //cout<<endl<<endl;
+    //cout<<k;
+    //cout<<endl<<endl;
+    //Reklame r;
+    //cout<<r;
+    //cout<<endl<<endl;
+    //cout<<"Ulogovalo se: "<<k.getBroj()<<" korisnika"<<endl;
+    Restoran r;
+    r.vrsteKuhinje();
+    r.porucivanje();
+    //Jelo j;
+    //j.ispis();
+    //Pice p;
+    //p.ispis();
     return 0;
 }

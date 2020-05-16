@@ -2,40 +2,34 @@
 #define RESTORAN_HPP_INCLUDED
 #include "meni.hpp"
 #include "vrsta_kuhinje.hpp"
+#include <vector>
 
 class Restoran
 {
 private:
     Meni m;
-    Vrsta_kuhinje vrsta[8];
+    vector <Vrsta_kuhinje> v;
 public:
-
+    Restoran(){}
     void vrsteKuhinje()
     {
         Vrsta_kuhinje v1(italijanska, "italijanska");
-        vrsta[0]=v1;
+        v.push_back(v1);
         Vrsta_kuhinje v2(kineska, "kineska");
-        vrsta[1]=v2;
+        v.push_back(v2);
         Vrsta_kuhinje v3(domaca, "domaca");
-        vrsta[2]=v3;
+        v.push_back(v3);
         Vrsta_kuhinje v4(brzaHrana, "brza hrana");
-        vrsta[3]=v4;
+        v.push_back(v4);
     }
 
-    /*void porucivanje()
+    void porucivanje()
     {
         cout<<"Izaberite vrstu kuhinje:"<<endl;
-        for(int i; i<4; i++)
-        {
-            cout<<i+1<<"."<<vrsta[i]<<endl;
+        for(auto it=v.begin(); it<v.end(); it++){
+            cout<<*it<<endl<<endl;
         }
-        int broj;
-        cin>>broj;
-        if(broj==1)
-        {
-
-        }
-    }*/
+    }
 
 };
 #endif // RESTORAN_HPP_INCLUDED

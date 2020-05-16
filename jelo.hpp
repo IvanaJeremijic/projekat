@@ -23,6 +23,10 @@ public:
     }
     Jelo(int id, bool veg, string ime, int cena): Artikal(id), vegeterijanska(veg), imeJela(ime), cenaJela(cena) {}
     Jelo(): Artikal(1), imeJela("ime"), cenaJela(2) {}
+
+    void ispis(){
+        cout<<imeJela;
+    }
 };
 
 #endif // JELO_HPP_INCLUDED

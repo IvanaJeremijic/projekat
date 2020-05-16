@@ -18,6 +18,10 @@ public:
     }
     Pice(int id, string ime, int cena): Artikal(id), imePica(ime), cenaPica(cena) {}
     Pice(): Artikal(0), imePica("ime"), cenaPica(1) {}
+
+    void ispis(){
+        cout<<imePica;
+    }
 };
 
 #endif // PICE_HPP_INCLUDED

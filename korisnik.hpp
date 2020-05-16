@@ -60,6 +60,10 @@ public:
     static int getStatickiBroj(){
         return broj;
     }
+
+    ~Korisnik(){
+        broj--;
+    }
 };
 
 #endif // KORISNIK_HPP_INCLUDED

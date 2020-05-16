@@ -14,6 +14,7 @@ public:
     {
         id=0;
     }
+    virtual void ispis()=0;
 };
 
 #endif // OBROK_HPP_INCLUDED
