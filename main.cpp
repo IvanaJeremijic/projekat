@@ -18,13 +18,13 @@ ostream& operator<<(ostream& out, const Vrsta_kuhinje& v)
     if(v.getK()==0){
         out<<"italijanska";
     }
-    else if(v.getK()==0){
+    else if(v.getK()==1){
         out<<"kineska";
     }
-    else if(v.getK()==0){
-        out<<"odmaca";
+    else if(v.getK()==2){
+        out<<"domaca";
     }
-    else if(v.getK()==0){
+    else if(v.getK()==3){
         out<<"brza hrana";
     }
     out<<endl;
