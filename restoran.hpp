@@ -10,7 +10,7 @@ private:
     Meni m;
     vector <Vrsta_kuhinje> v;
 public:
-    Restoran(){}
+    Restoran() {}
     void vrsteKuhinje()
     {
         Vrsta_kuhinje v1(italijanska, "opis");
@@ -27,7 +27,8 @@ public:
     {
         cout<<"Izaberite vrstu kuhinje:"<<endl;
         int i=1;
-        for(auto it=v.begin(); it<v.end(); it++){
+        for(auto it=v.begin(); it<v.end(); it++)
+        {
             cout<<"\t"<<i<<". "<<*it<<endl<<endl;
             i++;
         }

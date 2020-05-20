@@ -62,19 +62,19 @@ public:
 
     void unosPica()
     {
-        Pice p1(1, "pice1", 250);
+        Pice p1(1, "pice1", 60);
         pica.push_back(p1);
-        Pice p2(2, "pice2", 200);
+        Pice p2(2, "pice2", 35);
         pica.push_back(p2);
-        Pice p3(3, "pice3", 350);
+        Pice p3(3, "pice3", 200);
         pica.push_back(p3);
-        Pice p4(4, "pice4", 500);
+        Pice p4(4, "pice4", 90);
         pica.push_back(p4);
-        Pice p5(5, "pice5", 650);
+        Pice p5(5, "pice5", 60);
         pica.push_back(p5);
-        Pice p6(6, "pice6", 200);
+        Pice p6(6, "pice6", 100);
         pica.push_back(p6);
-        Pice p7(7, "pice7", 250);
+        Pice p7(7, "pice7", 150);
         pica.push_back(p7);
     }
 
@@ -85,7 +85,30 @@ public:
         cout<<endl<<endl;
     }
 
-
+    void pretragaJela(string jelo){
+        bool pronadjen=false;
+        for(auto it=jela.begin(); it<jela.end(); it++){
+            if(jelo==(it)->getI()){
+                (it)->ispis();
+                pronadjen=true;
+            }
+        }
+        if(!pronadjen){
+            cout<<"takvo jelo ne postoji"<<endl;
+        }
+    }
+    void pretragaPica(string pice){
+        bool pronadjen=false;
+        for(auto it=pica.begin(); it<pica.end(); it++){
+            if(pice==(it)->getIme()){
+                (it)->ispis();
+                pronadjen=true;
+            }
+        }
+        if(!pronadjen){
+            cout<<"takvo pice ne postoji"<<endl;
+        }
+    }
 };
 
 #endif // MENI_HPP_INCLUDED

@@ -4,22 +4,22 @@
 class Reklame
 {
 private:
-    int cena;
+    string opis;
     string nazivProizvoda;
 public:
-    Reklame(int c, string naziv)
+    Reklame(string naziv, string o)
     {
-        cena=c;
+        opis=o;
         nazivProizvoda=naziv;
     }
     Reklame()
     {
-        cena=5;
+        opis="opis";
         nazivProizvoda="proizvod";
     }
-    int getCena()const
+    string getOpis()const
     {
-        return cena;
+        return opis;
     }
     string getNaziv()const
     {

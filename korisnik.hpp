@@ -12,8 +12,14 @@ private:
     Adresa a;
     static int broj;
 public:
-    Korisnik(string ulica, int br, string grad, string i, string p, int brt): a(ulica, br, grad), ime(i), prezime(p), brojTelefona(brt) {broj++;}
-    Korisnik(): a("ime ulice", 8, "ime grada"), ime("ime"), prezime("prezime"), brojTelefona(6) {broj++;}
+    Korisnik(string ulica, int br, string grad, string i, string p, int brt): a(ulica, br, grad), ime(i), prezime(p), brojTelefona(brt)
+    {
+        broj++;
+    }
+    Korisnik(): a("ime ulice", 8, "ime grada"), ime("ime"), prezime("prezime"), brojTelefona(6)
+    {
+        broj++;
+    }
 
     void unos()
     {
@@ -60,14 +66,17 @@ public:
 
     friend ostream& operator<<(ostream& out, const Korisnik& k);
 
-    int getBroj(){
+    int getBroj()
+    {
         return broj;
     }
-    static int getStatickiBroj(){
+    static int getStatickiBroj()
+    {
         return broj;
     }
 
-    ~Korisnik(){
+    ~Korisnik()
+    {
         broj--;
     }
 };
