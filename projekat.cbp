@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="PORUDZBINA" />
+		<Unit filename="PORUDZBINA.txt" />
 		<Unit filename="adresa.hpp" />
 		<Unit filename="artikal.hpp" />
 		<Unit filename="jelo.hpp" />

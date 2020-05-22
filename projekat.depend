@@ -2,7 +2,7 @@
 1586272558 source:c:\programiranje\projekat\main.cpp
 	<iostream>
 
-1590094920 source:c:\skola\programiranje\projekat\main.cpp
+1590188508 source:c:\skola\programiranje\projekat\main.cpp
 	<iostream>
 	"korisnik.hpp"
 	"adresa.hpp"
@@ -27,7 +27,7 @@
 	"vrsta_kuhinje.hpp"
 	<vector>
 
-1589998998 c:\skola\programiranje\projekat\meni.hpp
+1590192566 c:\skola\programiranje\projekat\meni.hpp
 	<fstream>
 	"jelo.hpp"
 	"pice.hpp"
@@ -36,13 +36,14 @@
 1589993955 c:\skola\programiranje\projekat\jelo.hpp
 	"artikal.hpp"
 
-1589549377 c:\skola\programiranje\projekat\artikal.hpp
+1590172726 c:\skola\programiranje\projekat\artikal.hpp
 
 1589993969 c:\skola\programiranje\projekat\pice.hpp
 	"artikal.hpp"
 
-1589545552 c:\skola\programiranje\projekat\porudzbina.hpp
+1590192619 c:\skola\programiranje\projekat\porudzbina.hpp
 	"artikal.hpp"
+	"meni.hpp"
 
 1589987575 c:\skola\programiranje\projekat\reklame.hpp
 

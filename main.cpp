@@ -61,6 +61,22 @@ ostream& operator<<(ostream& out, const Reklame& r)
     return out;
 }
 
+void pisiTxt(string nazivFajla, string tekst1, char mode='w')
+{
+    ofstream fajl;
+    if (mode=='a')
+    {
+        fajl.open (nazivFajla, ios_base::app);
+    }
+    else
+    {
+        fajl.open (nazivFajla);
+    }
+    fajl<<tekst1<<endl;
+    fajl.close();
+
+}
+
 int Korisnik::broj=0;
 
 //porucivanje hrane: unos podataka korisnika, odabir vrste kuhinje, zatim jela i pica i na kraju sumiranje cele porudzbine
@@ -283,6 +299,18 @@ int main()
     cout<<endl<<endl;
 
     cout<<"Vasa porudzbina:"<<endl;
+
+    Porudzbina ppp;
+    ppp.idj(jelo);
+    ppp.idp(pice);
+
+    string ulaz;
+    for(auto it=artikli.begin(); it<artikli.end(); it++)
+    {
+        ulaz=to_string(it->getID());
+        pisiTxt("PORUDZBINA.txt", ulaz, 'a');
+    }
+
 
     //Jelo j;
     //j.ispis();
