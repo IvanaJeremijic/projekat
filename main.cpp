@@ -102,8 +102,7 @@ int main()
     m.unosPica();
 
     bool jj;
-    bool pp;
-    pp=0;
+    bool pp=1;
     string jelo;
     string pice;
 
@@ -141,6 +140,9 @@ int main()
                 v=0;
                 continue;
             }
+
+            cout<<"_______________________________________";
+            cout<<endl<<endl;
 
             cout<<"Da li ste zadovoljni odabirom vrste kuhinje?"<<endl<<"da(1)"<<endl<<"ne(0)"<<endl;
             cin>>v;
@@ -208,6 +210,9 @@ int main()
 
             cin>>jelo;
 
+            cout<<"_______________________________________";
+            cout<<endl<<endl;
+
             cout<<"Da li ste zadovoljni odabirom jela?"<<endl<<"da(1)"<<endl<<"ne(0)"<<endl;
             cin>>v;
             cout<<"_______________________________________";
@@ -215,16 +220,18 @@ int main()
         }
         while(v==0);
 
+        Reklame reklama3;
+        cout<<reklama3<<endl;
+        cout<<"_______________________________________";
+        cout<<endl<<endl;
+
         cout<<"Zelite li da narucite pice?"<<endl<<"da(1)"<<endl<<"ne(0)"<<endl;
         cin>>pp;
+        cout<<"_______________________________________";
+        cout<<endl<<endl;
     }
 
-    Reklame reklama3;
-    cout<<reklama3<<endl;
-    cout<<"_______________________________________";
-    cout<<endl<<endl;
-
-    if(pp=1)
+    if(pp==1)
     {
         do
         {
@@ -253,6 +260,9 @@ int main()
 
             cin>>pice;
 
+            cout<<"_______________________________________";
+            cout<<endl<<endl;
+
             cout<<"Da li ste zadovoljni odabirom pica?"<<endl<<"da(1)"<<endl<<"ne(0)"<<endl;
             cin>>v;
             cout<<"_______________________________________";
@@ -261,6 +271,18 @@ int main()
         while(v==0);
     }
 
+    if(pp==0)
+    {
+        cout<<"_______________________________________";
+        cout<<endl<<endl;
+    }
+
+    Reklame reklama4;
+    cout<<reklama4<<endl;
+    cout<<"_______________________________________";
+    cout<<endl<<endl;
+
+    cout<<"Vasa porudzbina:"<<endl;
 
     //Jelo j;
     //j.ispis();
