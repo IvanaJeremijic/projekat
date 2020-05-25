@@ -4,28 +4,7 @@
 #include "jelo.hpp"
 #include "pice.hpp"
 #include <vector>
-
-void citajTxt(string nazivFajla)
-{
-    string linija;
-    ifstream fajl (nazivFajla);
-    if (fajl.is_open())
-    {
-        while ( getline (fajl,linija) )
-        {
-            cout << linija << '\n';
-        }
-        fajl.close();
-    }
-
-
-
-    else
-        cout << "Neuspesno otvoren fajl";
-
-
-
-}
+#include <iostream>
 
 class Meni
 {
@@ -78,13 +57,6 @@ public:
         pica.push_back(p7);
     }
 
-    void citajFajl(string nazivFajla)
-    {
-        cout<<"Meni: "<<endl;
-        citajTxt(nazivFajla);
-        cout<<endl<<endl;
-    }
-
     void pretragaJela(string jelo){
         bool pronadjen=false;
         for(auto it=jela.begin(); it<jela.end(); it++){
@@ -112,15 +84,13 @@ public:
 
     int pretragaJelaID(string jelo){
         bool pronadjen=false;
-        jela.size();
         for(auto it=jela.begin(); it<jela.end(); it++){
-            cout<<pronadjen;
             if(jelo==(it)->getI()){
                 pronadjen=true;
                 return (it)->getID();
             }
         }
-        if(!pronadjen){
+        if(pronadjen==false){
             cout<<"takvo jelo ne postoji"<<endl;
         }
     }
@@ -131,6 +101,32 @@ public:
             if(pice==(it)->getIme()){
                 pronadjen=true;
                 return (it)->getID();
+            }
+        }
+        if(!pronadjen){
+            cout<<"takvo pice ne postoji"<<endl;
+        }
+    }
+
+    int pretragaJelaCena(string jelo){
+        bool pronadjen=false;
+        for(auto it=jela.begin(); it<jela.end(); it++){
+            if(jelo==(it)->getI()){
+                pronadjen=true;
+                return (it)->getC();
+            }
+        }
+        if(pronadjen==false){
+            cout<<"takvo jelo ne postoji"<<endl;
+        }
+    }
+
+    int pretragaPicaCena(string pice){
+        bool pronadjen=false;
+        for(auto it=pica.begin(); it<pica.end(); it++){
+            if(pice==(it)->getIme()){
+                pronadjen=true;
+                return (it)->getCena();
             }
         }
         if(!pronadjen){

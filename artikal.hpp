@@ -14,7 +14,7 @@ public:
     {
         id=0;
     }
-    virtual void ispis()=0;
+    //virtual void ispis()=0;
     int getID(){
         return id;
     }
